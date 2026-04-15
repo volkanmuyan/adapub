@@ -51,7 +51,7 @@ export default function Footer({ lang }) {
       <div className="footer-top">
         <div className="footer-inner">
           <div className="footer-brand">
-            <img src="/logo.png" alt="ADA Pub" className="footer-logo" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="ADA Pub" className="footer-logo" />
             <p className="footer-tagline">{T.tagline}</p>
           </div>
           <nav className="footer-nav">

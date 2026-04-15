@@ -55,7 +55,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme }) {
     >
       <div className="nav-inner">
         <a href="#" className="nav-logo" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>
-          <img src="/logo.png" alt="ADA Pub" className="logo-img" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="ADA Pub" className="logo-img" />
         </a>
 
         <ul className="nav-links">
