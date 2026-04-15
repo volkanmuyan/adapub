@@ -39,7 +39,9 @@ function ParticleCanvas() {
   const canvasRef = useRef(null)
   useEffect(() => {
     const canvas = canvasRef.current
+    if (!canvas) return
     const ctx = canvas.getContext('2d')
+    if (!ctx) return
     let animId
     let W = canvas.width = window.innerWidth
     let H = canvas.height = window.innerHeight
