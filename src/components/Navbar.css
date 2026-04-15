@@ -1,0 +1,177 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 3vw;
+  transition: background 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(8,8,8,0.90);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 0 rgba(247,181,0,0.12);
+}
+
+/* Light theme scrolled */
+[data-theme="light"] .navbar.scrolled {
+  background: rgba(255,255,255,0.92);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+}
+
+.nav-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 76px;
+}
+
+.nav-logo { flex-shrink: 0; text-decoration: none; }
+.logo-img { height: 44px; width: auto; display: block; }
+
+.nav-links { display: flex; list-style: none; gap: 2rem; flex: 1; justify-content: center; }
+
+.nav-link {
+  color: var(--fg-70);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  position: relative;
+  padding-bottom: 2px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 1.5px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+.nav-link:hover { color: var(--fg); }
+.nav-link:hover::after { width: 100%; }
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-shrink: 0;
+}
+
+.lang-switch { display: flex; align-items: center; }
+.lang-item { display: flex; align-items: center; }
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--fg-45);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  padding: 4px 5px;
+  transition: color 0.3s;
+}
+.lang-btn.active { color: var(--gold); }
+.lang-btn:hover { color: var(--fg); }
+
+.lang-divider { color: var(--fg-20); font-size: 0.7rem; }
+
+.theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  color: var(--fg-55);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+.theme-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.nav-cta { font-size: 0.72rem !important; padding: 12px 22px !important; }
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+}
+.burger span {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--fg);
+  transition: all 0.35s ease;
+  transform-origin: center;
+}
+.burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  overflow: hidden;
+}
+.mobile-menu ul { list-style: none; padding: 1.5rem 3vw 0; }
+.mobile-menu ul li a {
+  display: block;
+  padding: 14px 0;
+  color: var(--fg-70);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border-light);
+  transition: color 0.3s;
+}
+.mobile-menu ul li a:hover { color: var(--gold); }
+
+.mobile-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3vw;
+}
+.mobile-lang { display: flex; gap: 0.8rem; }
+.mobile-lang button {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--fg-45);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.mobile-lang button.active { border-color: var(--gold); color: var(--gold); }
+
+.mobile-cta {
+  display: block;
+  width: calc(100% - 6vw);
+  margin: 0 3vw 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .nav-links, .nav-cta { display: none; }
+  .burger { display: flex; }
+}
