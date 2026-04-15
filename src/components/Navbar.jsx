@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import logo from '../assets/logo.png'
 import './Navbar.css'
 
 const t = {
@@ -55,7 +56,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme }) {
     >
       <div className="nav-inner">
         <a href="#" className="nav-logo" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>
-          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="ADA Pub" className="logo-img" />
+          <img src={logo} alt="ADA Pub" className="logo-img" />
         </a>
 
         <ul className="nav-links">
