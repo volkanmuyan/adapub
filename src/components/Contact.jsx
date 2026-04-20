@@ -22,7 +22,7 @@ const t = {
     sub: "Une question, un devis, une idée ? Notre équipe est disponible pour vous accompagner dans tous vos projets créatifs et publicitaires.",
     info: [
       { label: 'Adresse',   value: 'Rue des Créateurs 42\n1000 Bruxelles, Belgique' },
-      { label: 'Téléphone', value: '+32 2 123 45 67' },
+      { label: 'Téléphone', value: '0470 98 78 12' },
       { label: 'Email',     value: 'info@adapub.be' },
       { label: 'Horaires',  value: 'Lun–Ven : 9h00–18h00\nSam : 10h00–14h00' },
     ],
@@ -36,7 +36,7 @@ const t = {
     sub: 'Een vraag, een offerte, een idee? Ons team staat klaar om u te begeleiden in al uw creatieve en reclameprojecten.',
     info: [
       { label: 'Adres',        value: 'Rue des Créateurs 42\n1000 Brussel, België' },
-      { label: 'Telefoon',     value: '+32 2 123 45 67' },
+      { label: 'Telefoon',     value: '0470 98 78 12' },
       { label: 'E-mail',       value: 'info@adapub.be' },
       { label: 'Openingsuren', value: 'Ma–Vr: 9u00–18u00\nZa: 10u00–14u00' },
     ],
@@ -50,7 +50,7 @@ const t = {
     sub: 'A question, a quote, an idea? Our team is ready to guide you through all your creative and advertising projects.',
     info: [
       { label: 'Address', value: 'Rue des Créateurs 42\n1000 Brussels, Belgium' },
-      { label: 'Phone',   value: '+32 2 123 45 67' },
+      { label: 'Phone',   value: '0470 98 78 12' },
       { label: 'Email',   value: 'info@adapub.be' },
       { label: 'Hours',   value: 'Mon–Fri: 9:00–18:00\nSat: 10:00–14:00' },
     ],
