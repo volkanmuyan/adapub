@@ -32,6 +32,16 @@ const t = {
     b1: '+500', b1s: 'Projects delivered',
     b2: '15+',  b2s: 'Years of experience',
     b3: '100%', b3s: 'Client satisfaction',
+  },
+  tr: {
+    tag: 'Yaratıcı Ajans · Brüksel',
+    h1: 'Vizyonunuz,', h2: 'bizim yaratımımız.',
+    sub: 'Dijital baskıdan LED reklamcılığa, ADA Pub fikirlerinizi akılda kalıcı görsel deneyimlere dönüştürür.',
+    cta1: 'Hizmetlerimizi keşfedin', cta2: 'Randevu alın',
+    scroll: 'Keşfetmek için kaydırın',
+    b1: '+500', b1s: 'Tamamlanan proje',
+    b2: '15+',  b2s: 'Yıllık deneyim',
+    b3: '100%', b3s: 'Müşteri memnuniyeti',
   }
 }
 

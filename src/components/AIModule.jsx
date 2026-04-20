@@ -114,6 +114,55 @@ const chatKB = {
     inputPlaceholder: 'Stel uw vraag...',
     botLabel: 'Ada AI',
   },
+  tr: {
+    welcome: 'Merhaba! Ben Ada Publicité asistanıyım. Size nasıl yardımcı olabilirim?',
+    suggestions: ['Hizmetlerimiz', 'Dijital baskı', 'Araç giydirme', 'LED paneller', 'Bize ulaşın'],
+    rules: [
+      {
+        keys: ['hizmet', 'ne yapıyorsunuz', 'faaliyet', 'sunuyorsunuz', 'sunuyor'],
+        answer: "Ada Publicité 6 ana hizmet sunmaktadır:\n• Dijital Baskı – baskı, afiş, sticker\n• Araç Giydirme – kaplama ve markalama\n• Işıklı Tabela – LED tabela sistemleri\n• LED Paneller – dinamik ekranlar\n• Tabelalar – iç & dış mekan tabelası\n• Grafik Tasarım & Yapay Zeka\n\nHangi hizmet ilginizi çekiyor?"
+      },
+      {
+        keys: ['baskı', 'dijital', 'print', 'afiş', 'flyer', 'kartvizit', 'broşür'],
+        answer: "Dijital baskı hizmetimiz şunları kapsar:\n• Büyük format baskılar (iç/dış mekan)\n• Yüksek çözünürlüklü afiş & flyer\n• Sticker & yapışkanlı vinil\n• Branda & roll-up\n\nUV ve süblimasyon baskı teknolojileri kullanarak mükemmel sonuçlar elde ediyoruz."
+      },
+      {
+        keys: ['araç', 'oto', 'giydirme', 'kaplama', 'wrap', 'kamyon', 'araç'],
+        answer: "Araç giydirme ve kaplama uzmanlığımızdır!\n• Kısmi veya tam markalama\n• Tam araç kaplaması (wrap)\n• Şirket metin & logosu\n• Mat, parlak veya saten filmler\n\nHer uygulama kurumsal kimliğinize özel tasarlanır."
+      },
+      {
+        keys: ['led', 'ışıklı', 'tabela', 'panel', 'ekran', 'display'],
+        answer: "LED çözümlerimiz iki kategoride sunulmaktadır:\n\n💡 Işıklı Tabela: LED tabelalar, aydınlatmalı kutular, kesik ışıklı harfler.\n\n📺 LED Paneller: vitrin, lobi ve kamusal alanlarda dinamik ekranlar.\n\n7/24 dikkat çekmek için ideal."
+      },
+      {
+        keys: ['tasarım', 'grafik', 'logo', 'görsel', 'kimlik', 'marka'],
+        answer: "Tasarım ekibimiz şunları oluşturur:\n• Logo & kurumsal kimlik\n• Tam marka rehberi\n• Baskı materyalleri (kart, broşür, katalog)\n• Sosyal medya & kampanya görselleri\n\nYapay zeka, fikir üretme ve revizyon süreçlerini hızlandırır."
+      },
+      {
+        keys: ['fiyat', 'ücret', 'teklif', 'ne kadar', 'maliyet', 'bütçe'],
+        answer: "Fiyatlar boyut, malzeme ve miktara göre değişir. Ücretsiz kişiselleştirilmiş teklif almak için:\n• 30 dakikalık danışma görüşmesi ayarlayabilirsiniz (Randevu bölümü)\n• contact@adapublicite.be adresine yazabilirsiniz\n\n24 saat içinde geri dönüş yapıyoruz!"
+      },
+      {
+        keys: ['iletişim', 'email', 'mail', 'ulaş', 'telefon', 'ara'],
+        answer: "Bize ulaşmak için:\n📧 contact@adapublicite.be\n📧 adapubsign@gmail.com\n\nYa da Randevu bölümünü kullanarak ekibimizle ücretsiz 30 dakikalık görüşme planlayın."
+      },
+      {
+        keys: ['brüksel', 'konum', 'adres', 'nerede', 'belçika'],
+        answer: "Ada Publicité, Belçika'nın Brüksel şehrinde bulunmaktadır. Brüksel ve çevresinde hizmet veriyoruz; daha uzak müşterilerimiz için video görüşmesi de düzenleyebiliyoruz."
+      },
+      {
+        keys: ['süre', 'teslim', 'zaman', 'ne zaman', 'hızlı'],
+        answer: "Üretim sürelerimiz projeye göre değişir:\n• Basit baskı: 24 ila 72 saat\n• Araç giydirme: 2 ila 5 gün\n• LED tabela: 1 ila 3 hafta\n\nTalep üzerine ekspres teslimat mümkündür. Detaylar için bize ulaşın."
+      },
+      {
+        keys: ['randevu', 'danışma', 'görüşme', 'buluşma', 'rezervasyon'],
+        answer: "Sitemizin Randevu bölümünden doğrudan ücretsiz 30 dakikalık danışma görüşmesi alabilirsiniz. Formu doldurun, ekibimiz 24 saat içinde onay için sizi arayacaktır."
+      },
+    ],
+    fallback: 'Sorunuzu tam olarak anlayamadım. Hizmetlerimiz, fiyatlandırma, teslim süreleri veya iletişim hakkında soru sorabilirsiniz. Aşağıdaki önerilerden de yararlanabilirsiniz.',
+    inputPlaceholder: 'Sorunuzu yazın...',
+    botLabel: 'Ada AI',
+  },
   en: {
     welcome: 'Hello! I\'m the Ada Publicité assistant. How can I help you today?',
     suggestions: ['Our services', 'Digital printing', 'Vehicle lettering', 'LED panels', 'Contact us'],
@@ -201,6 +250,18 @@ const t = {
       { title: 'Rapid iteration',      desc: 'Refine your creations with AI until you reach the perfect result.' },
     ],
     chatTitle: 'Ada Assistant',
+  },
+  tr: {
+    tag: 'Yapay Zeka',
+    title: 'Yapay zeka ile', titleAccent: 'güçlendirilmiş yaratıcılık',
+    sub: 'Yapay zeka modülümüz sektörünüzü, rakiplerinizi ve hedef kitlenizi analiz ederek özel yaratıcı konseptler üretir — daha hızlı, daha isabetli.',
+    features: [
+      { title: 'Marka analizi',        desc: 'Görsel kimliğinizin tam denetimi ve kişiselleştirilmiş öneriler.' },
+      { title: 'Anında üretim',        desc: 'Saniyeler içinde görsel konseptler, sloganlar ve renk paletleri.' },
+      { title: 'Veri optimizasyonu',   desc: 'Kampanyalarınızın etkisini maksimuma çıkarmak için veri odaklı kararlar.' },
+      { title: 'Hızlı revizyon',       desc: 'Mükemmel sonuca ulaşana kadar yapay zeka ile tasarımlarınızı geliştirin.' },
+    ],
+    chatTitle: 'Ada Asistanı',
   },
 }
 

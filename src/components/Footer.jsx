@@ -40,6 +40,19 @@ const t = {
     copy: '© 2026 ADA Pub. All rights reserved.',
     made: 'Creative agency · Brussels',
     legal: ['Legal notice', 'Privacy policy', 'Cookies'],
+  },
+  tr: {
+    tagline: 'Markanızın hizmetinde yaratıcı mükemmellik.',
+    links: [
+      { label: 'Hizmetler',     href: '#services' },
+      { label: 'Yapay Zeka',    href: '#ai' },
+      { label: 'Randevu Al',    href: '#reservation' },
+      { label: 'İletişim',      href: '#contact' },
+    ],
+    ctaLabel: 'Başlamaya hazır mısınız?', cta: 'Randevu alın',
+    copy: '© 2026 ADA Pub. Tüm hakları saklıdır.',
+    made: 'Yaratıcı ajans · Brüksel',
+    legal: ['Yasal uyarı', 'Gizlilik politikası', 'Çerezler'],
   }
 }
 

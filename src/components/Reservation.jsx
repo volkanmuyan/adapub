@@ -79,6 +79,24 @@ const t = {
       success: 'Your booking has been sent! We will contact you within 24 hours.',
       error: 'An error occurred. Please try again or contact us directly.',
     }
+  },
+  tr: {
+    tag: 'Randevu Al',
+    title: 'Ücretsiz', titleAccent: 'danışmanlık alın',
+    sub: 'Yaratıcı ekibimizle 30 dakikalık ücretsiz bir danışma görüşmesi ayarlayın. Projenizi analiz edip en iyi çözümleri sunacağız.',
+    why: [
+      { title: '24 saat içinde yanıt', desc: 'Ekibimiz en kısa sürede geri dönüş yapar.' },
+      { title: 'Ücretsiz danışmanlık', desc: 'İlk görüşme tamamen ücretsizdir.' },
+      { title: 'Brüksel\'de',          desc: 'Ya da tercihine göre video görüşmesiyle.' },
+    ],
+    form: {
+      firstName: 'Ad', lastName: 'Soyad', email: 'Kurumsal e-posta', phone: 'Telefon',
+      company: 'Şirket', date: 'Tercih edilen tarih', service: 'Hizmet türü',
+      services: ['Dijital Baskı', 'Araç Giydirme', 'LED Aydınlatma', 'LED Paneller', 'Tabela', 'Grafik Tasarım', 'Yapay Zeka', 'Diğer'],
+      message: 'Projenizi açıklayın', submit: 'Randevuyu onayla',
+      success: 'Randevunuz iletildi! 24 saat içinde sizinle iletişime geçeceğiz.',
+      error: 'Bir hata oluştu. Lütfen tekrar deneyin veya doğrudan bize ulaşın.',
+    }
   }
 }
 

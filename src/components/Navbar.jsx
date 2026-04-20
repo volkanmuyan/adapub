@@ -7,6 +7,7 @@ const t = {
   fr: { services: 'Services', ai: 'IA Créative', reservation: 'Réservation', contact: 'Contact', cta: 'Demander un devis' },
   nl: { services: 'Diensten',  ai: 'Creatieve AI', reservation: 'Reservering',  contact: 'Contact', cta: 'Offerte aanvragen' },
   en: { services: 'Services', ai: 'Creative AI',  reservation: 'Book a Call',  contact: 'Contact', cta: 'Get a Quote' },
+  tr: { services: 'Hizmetler', ai: 'Yapay Zeka',  reservation: 'Randevu Al',   contact: 'İletişim', cta: 'Teklif Al' },
 }
 
 const SunIcon = () => (
@@ -71,7 +72,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme }) {
 
         <div className="nav-right">
           <div className="lang-switch">
-            {['fr','nl','en'].map((l, i) => (
+            {['fr','nl','en','tr'].map((l, i) => (
               <span key={l} className="lang-item">
                 {i > 0 && <span className="lang-divider">|</span>}
                 <button className={`lang-btn ${lang === l ? 'active' : ''}`} onClick={() => setLang(l)}>
@@ -113,7 +114,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme }) {
             </ul>
             <div className="mobile-bottom">
               <div className="mobile-lang">
-                {['fr','nl','en'].map(l => (
+                {['fr','nl','en','tr'].map(l => (
                   <button key={l} className={lang === l ? 'active' : ''} onClick={() => setLang(l)}>{l.toUpperCase()}</button>
                 ))}
               </div>

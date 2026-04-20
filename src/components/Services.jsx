@@ -50,6 +50,19 @@ const t = {
       { title: 'Signboards',            desc: 'Custom-made signboards for shops, restaurants and businesses of all sizes.',                                                       tags: ['Aluminium', '3D', 'Backlit'] },
       { title: 'Graphic Design',        desc: 'Visual identity, logo, brand guidelines — our studio creates designs that tell your story.',                                       tags: ['Branding', 'Logo', 'Guidelines'] },
     ]
+  },
+  tr: {
+    tag: 'Hizmetlerimiz',
+    title: 'Sizin için', titleAccent: 'neler yaratıyoruz',
+    sub: 'Görsel etkinizi en üst düzeye çıkarmak için hassasiyetle tasarlanmış eksiksiz reklam ve yaratıcı çözümler.',
+    items: [
+      { title: 'Dijital Baskı',         desc: 'Kartvizit, broşür, flyer, afiş — istisnai sonuçlarla yüksek kaliteli baskı hizmeti.',                                            tags: ['Kartvizit', 'Flyer', 'Afiş'] },
+      { title: 'Araç Giydirme',         desc: 'Filonuzu profesyonel araç giydirme çözümleriyle hareketli reklam panolarına dönüştürün.',                                         tags: ['Kaplama', 'Sticker', 'Tam kaplama'] },
+      { title: 'Işıklı Tabela',         desc: 'Her saatte dikkat çeken ışıklı tabelalar, led kasalar ve LED aydınlatma sistemleri.',                                             tags: ['LED', 'Neon', 'Işıklı kutu'] },
+      { title: 'LED Paneller',          desc: 'Dış mekânlarda maksimum görsel etki için yüksek çözünürlüklü LED ekranlar ve reklam panelleri.',                                  tags: ['Dış mekan', 'İç mekan', 'Dinamik'] },
+      { title: 'Tabelalar',             desc: 'Her büyüklükteki dükkan, restoran ve işletmeler için özel üretim tabelalar.',                                                     tags: ['Alüminyum', '3D', 'Aydınlatmalı'] },
+      { title: 'Grafik Tasarım',        desc: 'Kurumsal kimlik, logo, marka rehberi — stüdiomuz hikayenizi anlatan tasarımlar üretir.',                                          tags: ['Marka', 'Logo', 'Kimlik'] },
+    ]
   }
 }
 

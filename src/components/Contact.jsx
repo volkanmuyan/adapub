@@ -57,6 +57,20 @@ const t = {
     formTitle: 'Send us a message',
     name: 'Your name', email: 'Your email', subject: 'Subject', message: 'Your message',
     submit: 'Send message', success: 'Message sent! We will reply within 24 hours.',
+  },
+  tr: {
+    tag: 'Bize Ulaşın',
+    title: 'Projeniz hakkında', titleAccent: 'konuşalım',
+    sub: 'Bir sorunuz, teklifiniz ya da fikriniz mi var? Ekibimiz tüm yaratıcı ve reklam projelerinizde size rehberlik etmeye hazır.',
+    info: [
+      { label: 'Adres',     value: 'Rue des Créateurs 42\n1000 Brüksel, Belçika' },
+      { label: 'Telefon',   value: '0470 98 78 12' },
+      { label: 'E-posta',   value: 'contact@adapublicite.be\nadapubsign@gmail.com' },
+      { label: 'Çalışma Saatleri', value: 'Pzt–Cum: 09:00–18:00\nCmt: 10:00–14:00' },
+    ],
+    formTitle: 'Bize mesaj gönderin',
+    name: 'Adınız', email: 'E-posta adresiniz', subject: 'Konu', message: 'Mesajınız',
+    submit: 'Mesaj gönder', success: 'Mesajınız iletildi! 24 saat içinde dönüş yapacağız.',
   }
 }
 
