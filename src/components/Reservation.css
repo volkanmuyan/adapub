@@ -53,6 +53,7 @@
 .form-group select option { background:var(--bg3); color:var(--fg); }
 input[type="date"]::-webkit-calendar-picker-indicator { filter:invert(0.5); cursor:pointer; }
 
+.form-error { font-size:.8rem; color:#ff5f57; padding:.6rem .8rem; background:rgba(255,95,87,.08); border:1px solid rgba(255,95,87,.2); border-radius:3px; margin-top:.2rem; }
 .submit-btn { width:100%; text-align:center; margin-top:.5rem; font-size:.85rem !important; padding:18px !important; }
 .submit-btn:disabled { opacity:.6; cursor:not-allowed; transform:none !important; }
 

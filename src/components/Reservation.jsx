@@ -1,6 +1,17 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
+import emailjs from '@emailjs/browser'
 import './Reservation.css'
+
+// EmailJS Setup: https://www.emailjs.com
+// 1. Create account → Add Email Service → Create Template
+// 2. Template variables: {{from_name}}, {{email}}, {{phone}}, {{company}}, {{date}}, {{service}}, {{message}}
+// 3. Set template "To Email" to: contact@adapublicite.be
+//    Add CC field: adapubsign@gmail.com
+// 4. Fill in your credentials below:
+const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID'   // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'  // e.g. 'template_xyz789'
+const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY'   // e.g. 'abcDEFghiJKL'
 
 const WHY_ICONS = [
   <svg key="0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>,
@@ -30,6 +41,7 @@ const t = {
       services: ['Impression Digitale', 'Lettrage Véhicule', 'Éclairage LED', 'Panneaux LED', 'Enseigne', 'Design Graphique', 'IA Créative', 'Autre'],
       message: 'Décrivez votre projet', submit: 'Confirmer la réservation',
       success: 'Votre réservation a été envoyée ! Nous vous contacterons dans les 24h.',
+      error: "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement.",
     }
   },
   nl: {
@@ -47,6 +59,7 @@ const t = {
       services: ['Digitaal Drukwerk', 'Voertuigbelettering', 'LED-verlichting', 'LED-panelen', 'Uithangbord', 'Grafisch Ontwerp', 'Creatieve AI', 'Andere'],
       message: 'Beschrijf uw project', submit: 'Reservering bevestigen',
       success: 'Uw reservering is verzonden! Wij nemen binnen 24 uur contact met u op.',
+      error: 'Er is een fout opgetreden. Probeer het opnieuw of contacteer ons rechtstreeks.',
     }
   },
   en: {
@@ -64,6 +77,7 @@ const t = {
       services: ['Digital Printing', 'Vehicle Lettering', 'LED Lighting', 'LED Panels', 'Signboard', 'Graphic Design', 'Creative AI', 'Other'],
       message: 'Describe your project', submit: 'Confirm booking',
       success: 'Your booking has been sent! We will contact you within 24 hours.',
+      error: 'An error occurred. Please try again or contact us directly.',
     }
   }
 }
@@ -75,12 +89,41 @@ export default function Reservation({ lang }) {
   const [form, setForm] = useState({ firstName: '', lastName: '', email: '', phone: '', company: '', service: '', date: '', message: '' })
   const [submitting, setSubmitting] = useState(false)
   const [success, setSuccess] = useState(false)
+  const [error, setError] = useState(false)
 
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value })
-  const handleSubmit = e => {
+
+  const handleSubmit = async e => {
     e.preventDefault()
     setSubmitting(true)
-    setTimeout(() => { setSubmitting(false); setSuccess(true) }, 2000)
+    setError(false)
+
+    const templateParams = {
+      from_name:    `${form.firstName} ${form.lastName}`,
+      from_email:   form.email,
+      phone:        form.phone || '—',
+      company:      form.company || '—',
+      date:         form.date || '—',
+      service:      form.service || '—',
+      message:      form.message || '—',
+      // Both recipients receive the notification
+      to_email:     'contact@adapublicite.be',
+      cc_email:     'adapubsign@gmail.com',
+    }
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      )
+      setSuccess(true)
+    } catch {
+      setError(true)
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -142,6 +185,7 @@ export default function Reservation({ lang }) {
                 </select>
               </div>
               <div className="form-group"><label>{T.form.message}</label><textarea name="message" rows={4} value={form.message} onChange={handleChange} /></div>
+              {error && <p className="form-error">{T.form.error}</p>}
               <button type="submit" className="btn-primary submit-btn" disabled={submitting}>
                 {submitting ? <span className="loading-dots"><span /><span /><span /></span> : T.form.submit}
               </button>
