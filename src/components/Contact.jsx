@@ -23,7 +23,7 @@ const t = {
     info: [
       { label: 'Adresse',   value: 'Rue des Créateurs 42\n1000 Bruxelles, Belgique' },
       { label: 'Téléphone', value: '0470 98 78 12' },
-      { label: 'Email',     value: 'info@adapub.be' },
+      { label: 'Email',     value: 'contact@adapublicite.be\nadapubsign@gmail.com' },
       { label: 'Horaires',  value: 'Lun–Ven : 9h00–18h00\nSam : 10h00–14h00' },
     ],
     formTitle: 'Envoyez-nous un message',
@@ -37,7 +37,7 @@ const t = {
     info: [
       { label: 'Adres',        value: 'Rue des Créateurs 42\n1000 Brussel, België' },
       { label: 'Telefoon',     value: '0470 98 78 12' },
-      { label: 'E-mail',       value: 'info@adapub.be' },
+      { label: 'E-mail',       value: 'contact@adapublicite.be\nadapubsign@gmail.com' },
       { label: 'Openingsuren', value: 'Ma–Vr: 9u00–18u00\nZa: 10u00–14u00' },
     ],
     formTitle: 'Stuur ons een bericht',
@@ -51,7 +51,7 @@ const t = {
     info: [
       { label: 'Address', value: 'Rue des Créateurs 42\n1000 Brussels, Belgium' },
       { label: 'Phone',   value: '0470 98 78 12' },
-      { label: 'Email',   value: 'info@adapub.be' },
+      { label: 'Email',   value: 'contact@adapublicite.be\nadapubsign@gmail.com' },
       { label: 'Hours',   value: 'Mon–Fri: 9:00–18:00\nSat: 10:00–14:00' },
     ],
     formTitle: 'Send us a message',
