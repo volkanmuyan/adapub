@@ -9,9 +9,9 @@ import './Reservation.css'
 // 3. Set template "To Email" to: contact@adapublicite.be
 //    Add CC field: adapubsign@gmail.com
 // 4. Fill in your credentials below:
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID'   // e.g. 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'  // e.g. 'template_xyz789'
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY'   // e.g. 'abcDEFghiJKL'
+const EMAILJS_SERVICE_ID  = 'service_xrfmvqk'
+const EMAILJS_TEMPLATE_ID = 'template_0gjyz5s'
+const EMAILJS_PUBLIC_KEY  = 'VO_ZHVftrE93taALk'
 
 const WHY_ICONS = [
   <svg key="0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>,
