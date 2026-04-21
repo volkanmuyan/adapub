@@ -15,13 +15,17 @@ const SUCCESS_ICON = (
   </svg>
 )
 
+const MAPS_URL = 'https://www.google.com/maps/dir/?api=1&destination=Rue+G%C3%A9n%C3%A9ral+Eenens+44,1030+Schaerbeek,Belgium'
+const MAPS_EMBED = 'https://maps.google.com/maps?q=Rue+G%C3%A9n%C3%A9ral+Eenens+44,1030+Schaerbeek,Belgium&output=embed&z=15'
+
 const t = {
   fr: {
     tag: 'Nous Contacter',
     title: 'Parlons de votre', titleAccent: 'projet',
     sub: "Une question, un devis, une idée ? Notre équipe est disponible pour vous accompagner dans tous vos projets créatifs et publicitaires.",
+    mapLabel: 'Obtenir l\'itinéraire',
     info: [
-      { label: 'Adresse',   value: 'Rue des Créateurs 42\n1000 Bruxelles, Belgique' },
+      { label: 'Adresse',   value: 'Rue Général Eenens 44\n1030 Schaerbeek, Belgique' },
       { label: 'Téléphone', value: '0470 98 78 12' },
       { label: 'Email',     value: 'contact@adapublicite.be\nadapubsign@gmail.com' },
       { label: 'Horaires',  value: 'Lun–Ven : 9h00–18h00\nSam : 10h00–14h00' },
@@ -34,8 +38,9 @@ const t = {
     tag: 'Contacteer Ons',
     title: 'Laten we praten over', titleAccent: 'uw project',
     sub: 'Een vraag, een offerte, een idee? Ons team staat klaar om u te begeleiden in al uw creatieve en reclameprojecten.',
+    mapLabel: 'Routebeschrijving',
     info: [
-      { label: 'Adres',        value: 'Rue des Créateurs 42\n1000 Brussel, België' },
+      { label: 'Adres',        value: 'Rue Général Eenens 44\n1030 Schaerbeek, België' },
       { label: 'Telefoon',     value: '0470 98 78 12' },
       { label: 'E-mail',       value: 'contact@adapublicite.be\nadapubsign@gmail.com' },
       { label: 'Openingsuren', value: 'Ma–Vr: 9u00–18u00\nZa: 10u00–14u00' },
@@ -55,6 +60,7 @@ const t = {
       { label: 'Hours',   value: 'Mon–Fri: 9:00–18:00\nSat: 10:00–14:00' },
     ],
     formTitle: 'Send us a message',
+    mapLabel: 'Get directions',
     name: 'Your name', email: 'Your email', subject: 'Subject', message: 'Your message',
     submit: 'Send message', success: 'Message sent! We will reply within 24 hours.',
   },
@@ -62,8 +68,9 @@ const t = {
     tag: 'Bize Ulaşın',
     title: 'Projeniz hakkında', titleAccent: 'konuşalım',
     sub: 'Bir sorunuz, teklifiniz ya da fikriniz mi var? Ekibimiz tüm yaratıcı ve reklam projelerinizde size rehberlik etmeye hazır.',
+    mapLabel: 'Yol tarifi al',
     info: [
-      { label: 'Adres',     value: 'Rue des Créateurs 42\n1000 Brüksel, Belçika' },
+      { label: 'Adres',     value: 'Rue Général Eenens 44\n1030 Schaerbeek, Belçika' },
       { label: 'Telefon',   value: '0470 98 78 12' },
       { label: 'E-posta',   value: 'contact@adapublicite.be\nadapubsign@gmail.com' },
       { label: 'Çalışma Saatleri', value: 'Pzt–Cum: 09:00–18:00\nCmt: 10:00–14:00' },
@@ -117,6 +124,26 @@ export default function Contact({ lang }) {
               </motion.div>
             ))}
           </div>
+          <motion.div
+            className="map-wrap"
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.6 }}
+          >
+            <iframe
+              className="map-iframe"
+              src={MAPS_EMBED}
+              title="Ada Publicité map"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <a className="map-directions-btn" href={MAPS_URL} target="_blank" rel="noopener noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              {T.mapLabel}
+            </a>
+          </motion.div>
+
           <div className="social-links">
             {['Facebook', 'Instagram', 'LinkedIn'].map(s => (
               <a key={s} href="#" className="social-link" onClick={e => e.preventDefault()}>{s}</a>
