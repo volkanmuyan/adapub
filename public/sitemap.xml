@@ -1,16 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://www.adapublicite.be/</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.adapublicite.be/" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://www.adapublicite.be/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.adapublicite.be/" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.adapublicite.be/" />
+  </url>
+
+  <url>
+    <loc>https://www.adapublicite.be/blog</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.adapublicite.be/blog/pourquoi-enseigne-led-transforme-commerce-bruxelles</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.adapublicite.be/blog/lettrage-vehicule-outil-marketing-bruxelles</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.adapublicite.be/blog/identite-visuelle-logo-pourquoi-crucial-entreprise</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.adapublicite.be/blog/impression-grand-format-bruxelles-guide-complet</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.adapublicite.be/blog/choisir-agence-publicitaire-bruxelles-schaerbeek</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

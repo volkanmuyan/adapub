@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useNavigate, useLocation } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import './Navbar.css'
 
 const t = {
-  fr: { services: 'Services', ai: 'IA Créative', reservation: 'Réservation', contact: 'Contact', cta: 'Demander un devis' },
-  nl: { services: 'Diensten',  ai: 'Creatieve AI', reservation: 'Reservering',  contact: 'Contact', cta: 'Offerte aanvragen' },
-  en: { services: 'Services', ai: 'Creative AI',  reservation: 'Book a Call',  contact: 'Contact', cta: 'Get a Quote' },
-  tr: { services: 'Hizmetler', ai: 'Yapay Zeka',  reservation: 'Randevu Al',   contact: 'İletişim', cta: 'Teklif Al' },
+  fr: { services: 'Services', ai: 'IA Créative', reservation: 'Réservation', contact: 'Contact', blog: 'Blog', cta: 'Demander un devis' },
+  nl: { services: 'Diensten',  ai: 'Creatieve AI', reservation: 'Reservering',  contact: 'Contact', blog: 'Blog', cta: 'Offerte aanvragen' },
+  en: { services: 'Services', ai: 'Creative AI',  reservation: 'Book a Call',  contact: 'Contact', blog: 'Blog', cta: 'Get a Quote' },
+  tr: { services: 'Hizmetler', ai: 'Yapay Zeka',  reservation: 'Randevu Al',   contact: 'İletişim', blog: 'Blog', cta: 'Teklif Al' },
 }
 
 const SunIcon = () => (
@@ -29,6 +30,9 @@ const MoonIcon = () => (
 export default function Navbar({ lang, setLang, theme, toggleTheme }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
+  const isHome = location.pathname === '/'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
@@ -36,16 +40,31 @@ export default function Navbar({ lang, setLang, theme, toggleTheme }) {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const links = [
+  const anchorLinks = [
     { href: '#services',    label: t[lang].services },
     { href: '#ai',          label: t[lang].ai },
     { href: '#reservation', label: t[lang].reservation },
     { href: '#contact',     label: t[lang].contact },
   ]
 
+  const links = [
+    ...anchorLinks,
+    { href: '/blog', label: t[lang].blog, isRoute: true },
+  ]
+
   const scrollTo = (href) => {
     setMenuOpen(false)
-    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
+    if (isHome) {
+      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      navigate('/')
+      setTimeout(() => document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' }), 300)
+    }
+  }
+
+  const handleLink = (link) => {
+    setMenuOpen(false)
+    if (link.isRoute) { navigate(link.href) } else { scrollTo(link.href) }
   }
 
   return (
@@ -63,7 +82,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme }) {
         <ul className="nav-links">
           {links.map((link) => (
             <li key={link.href}>
-              <a href={link.href} onClick={(e) => { e.preventDefault(); scrollTo(link.href) }} className="nav-link">
+              <a href={link.href} onClick={(e) => { e.preventDefault(); handleLink(link) }} className={`nav-link ${link.isRoute && location.pathname.startsWith('/blog') ? 'active' : ''}`}>
                 {link.label}
               </a>
             </li>
@@ -89,6 +108,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme }) {
           <button className="btn-primary nav-cta" onClick={() => scrollTo('#reservation')}>
             {t[lang].cta}
           </button>
+
         </div>
 
         <button className={`burger ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
@@ -108,7 +128,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme }) {
             <ul>
               {links.map((link, i) => (
                 <motion.li key={link.href} initial={{ x: -20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: i * 0.07 }}>
-                  <a onClick={(e) => { e.preventDefault(); scrollTo(link.href) }} href={link.href}>{link.label}</a>
+                  <a onClick={(e) => { e.preventDefault(); handleLink(link) }} href={link.href}>{link.label}</a>
                 </motion.li>
               ))}
             </ul>

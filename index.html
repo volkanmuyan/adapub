@@ -120,6 +120,10 @@
     </style>
   </head>
   <body>
+    <!-- GitHub Pages SPA routing restore -->
+    <script>
+      (function(){var e=window.location.search;if(e){var p=e.slice(1).split('&').find(function(q){return q.startsWith('p=')});if(p){window.history.replaceState(null,null,decodeURIComponent(p.slice(2))+window.location.hash)}}})()
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
