@@ -74,11 +74,12 @@ export default function BlogPost({ lang }) {
           <div className="post-cta-box">
             <h3 className="post-cta-title">{T.ctaTitle}</h3>
             <p className="post-cta-text">{article.cta[lang]}</p>
-            <Link to="/#reservation" className="btn-primary post-cta-btn" onClick={() => {
-              setTimeout(() => document.querySelector('#reservation')?.scrollIntoView({ behavior: 'smooth' }), 100)
+            <button className="btn-primary post-cta-btn" onClick={() => {
+              navigate('/')
+              setTimeout(() => document.querySelector('#reservation')?.scrollIntoView({ behavior: 'smooth' }), 400)
             }}>
               {T.ctaBtn}
-            </Link>
+            </button>
           </div>
         </motion.article>
 
