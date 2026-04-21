@@ -6,7 +6,7 @@ import './Reservation.css'
 // EmailJS Setup: https://www.emailjs.com
 // 1. Create account → Add Email Service → Create Template
 // 2. Template variables: {{from_name}}, {{email}}, {{phone}}, {{company}}, {{date}}, {{service}}, {{message}}
-// 3. Set template "To Email" to: contact@adapublicite.be
+// 3. Set template "To Email" to: info@adapublicite.be
 //    Add CC field: adapubsign@gmail.com
 // 4. Fill in your credentials below:
 const EMAILJS_SERVICE_ID  = 'service_xrfmvqk'
@@ -125,7 +125,7 @@ export default function Reservation({ lang }) {
       service:      form.service || '—',
       message:      form.message || '—',
       // Both recipients receive the notification
-      to_email:     'contact@adapublicite.be',
+      to_email:     'info@adapublicite.be',
       cc_email:     'adapubsign@gmail.com',
     }
 

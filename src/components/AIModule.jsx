@@ -42,11 +42,11 @@ const chatKB = {
       },
       {
         keys: ['prix', 'tarif', 'coût', 'devis', 'combien'],
-        answer: "Les tarifs varient selon les dimensions, matériaux et quantités. Pour obtenir un devis personnalisé gratuit, vous pouvez :\n• Réserver une consultation de 30 min (section Réservation)\n• Nous écrire à contact@adapublicite.be\n\nNous répondons sous 24h !"
+        answer: "Les tarifs varient selon les dimensions, matériaux et quantités. Pour obtenir un devis personnalisé gratuit, vous pouvez :\n• Réserver une consultation de 30 min (section Réservation)\n• Nous écrire à info@adapublicite.be\n\nNous répondons sous 24h !"
       },
       {
         keys: ['contact', 'email', 'mail', 'joindre', 'téléphone', 'appeler'],
-        answer: "Pour nous contacter :\n📧 contact@adapublicite.be\n📧 adapubsign@gmail.com\n\nOu utilisez la section Réservation pour fixer une consultation gratuite de 30 minutes avec notre équipe."
+        answer: "Pour nous contacter :\n📧 info@adapublicite.be\n📧 adapubsign@gmail.com\n\nOu utilisez la section Réservation pour fixer une consultation gratuite de 30 minutes avec notre équipe."
       },
       {
         keys: ['bruxelles', 'localisation', 'adresse', 'où', 'belgique'],
@@ -91,11 +91,11 @@ const chatKB = {
       },
       {
         keys: ['prijs', 'tarief', 'kost', 'offerte', 'hoeveel'],
-        answer: "De tarieven variëren naargelang afmetingen, materialen en hoeveelheden. Voor een gratis gepersonaliseerde offerte kunt u:\n• Een consultatie van 30 min reserveren (Reservering sectie)\n• Ons schrijven op contact@adapublicite.be\n\nWij antwoorden binnen 24 uur!"
+        answer: "De tarieven variëren naargelang afmetingen, materialen en hoeveelheden. Voor een gratis gepersonaliseerde offerte kunt u:\n• Een consultatie van 30 min reserveren (Reservering sectie)\n• Ons schrijven op info@adapublicite.be\n\nWij antwoorden binnen 24 uur!"
       },
       {
         keys: ['contact', 'email', 'mail', 'bereiken', 'telefoon', 'bellen'],
-        answer: "Om ons te contacteren:\n📧 contact@adapublicite.be\n📧 adapubsign@gmail.com\n\nOf gebruik de Reserveringssectie voor een gratis consultatie van 30 minuten met ons team."
+        answer: "Om ons te contacteren:\n📧 info@adapublicite.be\n📧 adapubsign@gmail.com\n\nOf gebruik de Reserveringssectie voor een gratis consultatie van 30 minuten met ons team."
       },
       {
         keys: ['brussel', 'locatie', 'adres', 'waar', 'belgië'],
@@ -140,11 +140,11 @@ const chatKB = {
       },
       {
         keys: ['fiyat', 'ücret', 'teklif', 'ne kadar', 'maliyet', 'bütçe'],
-        answer: "Fiyatlar boyut, malzeme ve miktara göre değişir. Ücretsiz kişiselleştirilmiş teklif almak için:\n• 30 dakikalık danışma görüşmesi ayarlayabilirsiniz (Randevu bölümü)\n• contact@adapublicite.be adresine yazabilirsiniz\n\n24 saat içinde geri dönüş yapıyoruz!"
+        answer: "Fiyatlar boyut, malzeme ve miktara göre değişir. Ücretsiz kişiselleştirilmiş teklif almak için:\n• 30 dakikalık danışma görüşmesi ayarlayabilirsiniz (Randevu bölümü)\n• info@adapublicite.be adresine yazabilirsiniz\n\n24 saat içinde geri dönüş yapıyoruz!"
       },
       {
         keys: ['iletişim', 'email', 'mail', 'ulaş', 'telefon', 'ara'],
-        answer: "Bize ulaşmak için:\n📧 contact@adapublicite.be\n📧 adapubsign@gmail.com\n\nYa da Randevu bölümünü kullanarak ekibimizle ücretsiz 30 dakikalık görüşme planlayın."
+        answer: "Bize ulaşmak için:\n📧 info@adapublicite.be\n📧 adapubsign@gmail.com\n\nYa da Randevu bölümünü kullanarak ekibimizle ücretsiz 30 dakikalık görüşme planlayın."
       },
       {
         keys: ['brüksel', 'konum', 'adres', 'nerede', 'belçika'],
@@ -189,11 +189,11 @@ const chatKB = {
       },
       {
         keys: ['price', 'cost', 'quote', 'how much', 'rate', 'budget'],
-        answer: "Pricing varies based on dimensions, materials and quantities. To get a free personalised quote, you can:\n• Book a free 30-min consultation (Reservation section)\n• Email us at contact@adapublicite.be\n\nWe reply within 24 hours!"
+        answer: "Pricing varies based on dimensions, materials and quantities. To get a free personalised quote, you can:\n• Book a free 30-min consultation (Reservation section)\n• Email us at info@adapublicite.be\n\nWe reply within 24 hours!"
       },
       {
         keys: ['contact', 'email', 'mail', 'reach', 'phone', 'call'],
-        answer: "To get in touch:\n📧 contact@adapublicite.be\n📧 adapubsign@gmail.com\n\nOr use the Reservation section to schedule a free 30-minute consultation with our team."
+        answer: "To get in touch:\n📧 info@adapublicite.be\n📧 adapubsign@gmail.com\n\nOr use the Reservation section to schedule a free 30-minute consultation with our team."
       },
       {
         keys: ['brussels', 'location', 'address', 'where', 'belgium'],

@@ -81,10 +81,10 @@ export const articles = [
       },
     ],
     cta: {
-      fr: "Vous souhaitez installer une enseigne LED pour votre commerce à Bruxelles ? Contactez ADA Pub au contact@adapublicite.be ou réservez une consultation gratuite de 30 minutes. Notre équipe se déplace à Schaerbeek, Ixelles, Anderlecht et dans toute la région bruxelloise.",
-      nl: "Wilt u een LED-bord installeren voor uw zaak in Brussel? Contacteer ADA Pub via contact@adapublicite.be of reserveer een gratis consultatie van 30 minuten.",
-      en: "Want to install an LED sign for your business in Brussels? Contact ADA Pub at contact@adapublicite.be or book a free 30-minute consultation.",
-      tr: "Brüksel'deki işletmeniz için LED tabela kurmak ister misiniz? ADA Pub ile iletişime geçin: contact@adapublicite.be veya ücretsiz 30 dakikalık danışma görüşmesi ayarlayın.",
+      fr: "Vous souhaitez installer une enseigne LED pour votre commerce à Bruxelles ? Contactez ADA Pub au info@adapublicite.be ou réservez une consultation gratuite de 30 minutes. Notre équipe se déplace à Schaerbeek, Ixelles, Anderlecht et dans toute la région bruxelloise.",
+      nl: "Wilt u een LED-bord installeren voor uw zaak in Brussel? Contacteer ADA Pub via info@adapublicite.be of reserveer een gratis consultatie van 30 minuten.",
+      en: "Want to install an LED sign for your business in Brussels? Contact ADA Pub at info@adapublicite.be or book a free 30-minute consultation.",
+      tr: "Brüksel'deki işletmeniz için LED tabela kurmak ister misiniz? ADA Pub ile iletişime geçin: info@adapublicite.be veya ücretsiz 30 dakikalık danışma görüşmesi ayarlayın.",
     },
   },
 
@@ -170,10 +170,10 @@ export const articles = [
       },
     ],
     cta: {
-      fr: "Prêt à transformer vos véhicules en ambassadeurs de votre marque à Bruxelles ? Contactez ADA Pub à Schaerbeek : contact@adapublicite.be — devis gratuit et réponse sous 24h.",
-      nl: "Klaar om uw voertuigen te transformeren tot merkambassadeurs in Brussel? Contacteer ADA Pub in Schaerbeek: contact@adapublicite.be — gratis offerte en antwoord binnen 24u.",
-      en: "Ready to turn your vehicles into brand ambassadors in Brussels? Contact ADA Pub in Schaerbeek: contact@adapublicite.be — free quote and reply within 24h.",
-      tr: "Araçlarınızı Brüksel'de marka elçilerine dönüştürmeye hazır mısınız? Schaerbeek'teki ADA Pub ile iletişime geçin: contact@adapublicite.be — ücretsiz teklif, 24 saatte yanıt.",
+      fr: "Prêt à transformer vos véhicules en ambassadeurs de votre marque à Bruxelles ? Contactez ADA Pub à Schaerbeek : info@adapublicite.be — devis gratuit et réponse sous 24h.",
+      nl: "Klaar om uw voertuigen te transformeren tot merkambassadeurs in Brussel? Contacteer ADA Pub in Schaerbeek: info@adapublicite.be — gratis offerte en antwoord binnen 24u.",
+      en: "Ready to turn your vehicles into brand ambassadors in Brussels? Contact ADA Pub in Schaerbeek: info@adapublicite.be — free quote and reply within 24h.",
+      tr: "Araçlarınızı Brüksel'de marka elçilerine dönüştürmeye hazır mısınız? Schaerbeek'teki ADA Pub ile iletişime geçin: info@adapublicite.be — ücretsiz teklif, 24 saatte yanıt.",
     },
   },
 
@@ -245,10 +245,10 @@ export const articles = [
       },
     ],
     cta: {
-      fr: "Vous souhaitez créer ou moderniser votre identité visuelle à Bruxelles ? L'équipe design d'ADA Pub à Schaerbeek est à votre disposition. Écrivez-nous à contact@adapublicite.be ou réservez une consultation gratuite.",
-      nl: "Wilt u uw visuele identiteit in Brussel creëren of moderniseren? Het designteam van ADA Pub in Schaerbeek staat voor u klaar. Schrijf ons op contact@adapublicite.be.",
-      en: "Want to create or modernise your visual identity in Brussels? ADA Pub's design team in Schaerbeek is at your disposal. Email us at contact@adapublicite.be.",
-      tr: "Brüksel'de görsel kimliğinizi oluşturmak veya modernize etmek ister misiniz? Schaerbeek'teki ADA Pub tasarım ekibi emrinizde. contact@adapublicite.be adresine yazın.",
+      fr: "Vous souhaitez créer ou moderniser votre identité visuelle à Bruxelles ? L'équipe design d'ADA Pub à Schaerbeek est à votre disposition. Écrivez-nous à info@adapublicite.be ou réservez une consultation gratuite.",
+      nl: "Wilt u uw visuele identiteit in Brussel creëren of moderniseren? Het designteam van ADA Pub in Schaerbeek staat voor u klaar. Schrijf ons op info@adapublicite.be.",
+      en: "Want to create or modernise your visual identity in Brussels? ADA Pub's design team in Schaerbeek is at your disposal. Email us at info@adapublicite.be.",
+      tr: "Brüksel'de görsel kimliğinizi oluşturmak veya modernize etmek ister misiniz? Schaerbeek'teki ADA Pub tasarım ekibi emrinizde. info@adapublicite.be adresine yazın.",
     },
   },
 
@@ -320,10 +320,10 @@ export const articles = [
       },
     ],
     cta: {
-      fr: "Besoin d'une impression grand format à Bruxelles pour votre prochain projet ? Contactez ADA Pub à Schaerbeek : contact@adapublicite.be. Devis gratuit et livraison dans toute la région bruxelloise.",
-      nl: "Heeft u grootformaatdruk nodig in Brussel voor uw volgende project? Contacteer ADA Pub in Schaerbeek: contact@adapublicite.be.",
-      en: "Need large format printing in Brussels for your next project? Contact ADA Pub in Schaerbeek: contact@adapublicite.be. Free quote and delivery throughout Brussels.",
-      tr: "Brüksel'de bir sonraki projeniz için büyük format baskıya ihtiyacınız var mı? ADA Pub Schaerbeek: contact@adapublicite.be — ücretsiz teklif.",
+      fr: "Besoin d'une impression grand format à Bruxelles pour votre prochain projet ? Contactez ADA Pub à Schaerbeek : info@adapublicite.be. Devis gratuit et livraison dans toute la région bruxelloise.",
+      nl: "Heeft u grootformaatdruk nodig in Brussel voor uw volgende project? Contacteer ADA Pub in Schaerbeek: info@adapublicite.be.",
+      en: "Need large format printing in Brussels for your next project? Contact ADA Pub in Schaerbeek: info@adapublicite.be. Free quote and delivery throughout Brussels.",
+      tr: "Brüksel'de bir sonraki projeniz için büyük format baskıya ihtiyacınız var mı? ADA Pub Schaerbeek: info@adapublicite.be — ücretsiz teklif.",
     },
   },
 
@@ -409,10 +409,10 @@ export const articles = [
       },
     ],
     cta: {
-      fr: "Vous cherchez une agence publicitaire de confiance à Bruxelles ? ADA Pub est à Schaerbeek, à votre service. Prenez contact : contact@adapublicite.be — première consultation gratuite et sans engagement.",
-      nl: "Zoekt u een betrouwbaar reclamebureau in Brussel? ADA Pub is in Schaerbeek, tot uw dienst. Neem contact op: contact@adapublicite.be — eerste gratis consultatie.",
-      en: "Looking for a trusted advertising agency in Brussels? ADA Pub is in Schaerbeek, at your service. Get in touch: contact@adapublicite.be — first consultation free.",
-      tr: "Brüksel'de güvenilir bir reklam ajansı mı arıyorsunuz? ADA Pub Schaerbeek'te hizmetinizde. İletişim: contact@adapublicite.be — ilk danışma ücretsiz.",
+      fr: "Vous cherchez une agence publicitaire de confiance à Bruxelles ? ADA Pub est à Schaerbeek, à votre service. Prenez contact : info@adapublicite.be — première consultation gratuite et sans engagement.",
+      nl: "Zoekt u een betrouwbaar reclamebureau in Brussel? ADA Pub is in Schaerbeek, tot uw dienst. Neem contact op: info@adapublicite.be — eerste gratis consultatie.",
+      en: "Looking for a trusted advertising agency in Brussels? ADA Pub is in Schaerbeek, at your service. Get in touch: info@adapublicite.be — first consultation free.",
+      tr: "Brüksel'de güvenilir bir reklam ajansı mı arıyorsunuz? ADA Pub Schaerbeek'te hizmetinizde. İletişim: info@adapublicite.be — ilk danışma ücretsiz.",
     },
   },
 ]
