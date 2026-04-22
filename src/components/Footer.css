@@ -13,7 +13,19 @@
 
 .footer-brand { max-width:300px; }
 .footer-logo { height:48px; width:auto; display:block; margin-bottom:1.2rem; }
-.footer-tagline { font-size:.9rem; font-weight:300; line-height:1.6; color:var(--fg-35); }
+[data-theme="dark"] .footer-logo { filter: brightness(0) invert(1); }
+.footer-tagline { font-size:.9rem; font-weight:300; line-height:1.6; color:var(--fg-35); margin-bottom:1.2rem; }
+
+.footer-socials { display:flex; gap:.6rem; }
+.social-icon-btn {
+  width:36px; height:36px; border-radius:6px;
+  border:1px solid var(--border); background:transparent;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--fg-45); text-decoration:none; cursor:pointer;
+  transition:border-color 0.25s, color 0.25s, background 0.25s;
+}
+.social-icon-btn:not(.social-icon-disabled):hover { border-color:var(--gold); color:var(--gold); background:rgba(247,181,0,0.06); }
+.social-icon-disabled { opacity:.3; cursor:not-allowed; }
 
 .footer-nav { display:flex; flex-direction:column; gap:.8rem; padding-top:4px; }
 .footer-link {
