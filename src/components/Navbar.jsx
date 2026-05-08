@@ -5,10 +5,10 @@ import logo from '../assets/logo.png'
 import './Navbar.css'
 
 const t = {
-  fr: { services: 'Services', ai: 'IA Créative', reservation: 'Réservation', contact: 'Contact', blog: 'Blog', cta: 'Demander un devis' },
-  nl: { services: 'Diensten',  ai: 'Creatieve AI', reservation: 'Reservering',  contact: 'Contact', blog: 'Blog', cta: 'Offerte aanvragen' },
-  en: { services: 'Services', ai: 'Creative AI',  reservation: 'Book a Call',  contact: 'Contact', blog: 'Blog', cta: 'Get a Quote' },
-  tr: { services: 'Hizmetler', ai: 'Yapay Zeka',  reservation: 'Randevu Al',   contact: 'İletişim', blog: 'Blog', cta: 'Teklif Al' },
+  fr: { services: 'Services', ai: 'IA Créative', reservation: 'Réservation', contact: 'Contact', blog: 'Blog', showcase: 'Réalisations', cta: 'Demander un devis' },
+  nl: { services: 'Diensten',  ai: 'Creatieve AI', reservation: 'Reservering',  contact: 'Contact', blog: 'Blog', showcase: 'Realisaties', cta: 'Offerte aanvragen' },
+  en: { services: 'Services', ai: 'Creative AI',  reservation: 'Book a Call',  contact: 'Contact', blog: 'Blog', showcase: 'Our Work', cta: 'Get a Quote' },
+  tr: { services: 'Hizmetler', ai: 'Yapay Zeka',  reservation: 'Randevu Al',   contact: 'İletişim', blog: 'Blog', showcase: 'Çalışmalar', cta: 'Teklif Al' },
 }
 
 const SunIcon = () => (
@@ -49,6 +49,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme }) {
 
   const links = [
     ...anchorLinks,
+    { href: '/showcase', label: t[lang].showcase, isRoute: true },
     { href: '/blog', label: t[lang].blog, isRoute: true },
   ]
 
@@ -82,7 +83,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme }) {
         <ul className="nav-links">
           {links.map((link) => (
             <li key={link.href}>
-              <a href={link.href} onClick={(e) => { e.preventDefault(); handleLink(link) }} className={`nav-link ${link.isRoute && location.pathname.startsWith('/blog') ? 'active' : ''}`}>
+              <a href={link.href} onClick={(e) => { e.preventDefault(); handleLink(link) }} className={`nav-link ${link.isRoute && location.pathname.startsWith(link.href) ? 'active' : ''}`}>
                 {link.label}
               </a>
             </li>

@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
+import Showcase from './pages/Showcase'
 import './App.css'
 
 function HomePage({ lang }) {
@@ -45,6 +46,7 @@ function AppInner() {
       <Navbar lang={lang} setLang={setLang} theme={theme} toggleTheme={toggleTheme} />
       <Routes>
         <Route path="/" element={<HomePage lang={lang} />} />
+        <Route path="/showcase" element={<Showcase lang={lang} />} />
         <Route path="/blog" element={<Blog lang={lang} />} />
         <Route path="/blog/:slug" element={<BlogPost lang={lang} />} />
       </Routes>

@@ -32,7 +32,7 @@
 .logo-img { height: 44px; width: auto; display: block; }
 [data-theme="dark"] .logo-img { filter: brightness(0) invert(1); }
 
-.nav-links { display: flex; list-style: none; gap: 2rem; flex: 1; justify-content: center; }
+.nav-links { display: flex; list-style: none; gap: 1.2rem; flex: 1; justify-content: center; }
 
 .nav-link {
   color: var(--fg-70);
@@ -172,7 +172,7 @@
   text-align: center;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   .nav-links, .nav-cta { display: none; }
   .burger { display: flex; }
 }
