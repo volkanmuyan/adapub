@@ -5,7 +5,7 @@ import './Services.css'
 const PHOTOS = [
   'https://images.unsplash.com/photo-1562408590-e32931084e23?w=700&q=80&auto=format&fit=crop',
   '/showcase/aracgiydirme.png',
-  'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=700&q=80&auto=format&fit=crop',
+  '/showcase/ısıklıtabela.png',
   'https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=700&q=80&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=700&q=80&auto=format&fit=crop',
