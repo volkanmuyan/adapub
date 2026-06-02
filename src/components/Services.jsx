@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion'
 import './Services.css'
 
 const PHOTOS = [
-  'https://images.unsplash.com/photo-1562408590-e32931084e23?w=700&q=80&auto=format&fit=crop',
+  '/showcase/kartvizit.png',
   '/showcase/aracgiydirme.png',
   '/showcase/ısıklıtabela.png',
   'https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=700&q=80&auto=format&fit=crop',
